@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:body>
+	<h:form>
+		<div align="center">
+			<h:panelGrid columns="2">
+				<f:facet name="header">
+					<h:outputLabel value="Cadastro de Pessoas" />
+				</f:facet>
+				<h:outputLabel value="Nome" />
+				<h:inputText readonly="true" value="#{personCtrl.person.name}" />
+				<h:outputLabel value="CPF" />
+				<h:inputText readonly="true" value="#{personCtrl.person.cpf}" />
+				<h:outputLabel value="RG" />
+				<h:inputText readonly="true" value="#{personCtrl.person.rg}" />
+				<h:outputLabel value="Data de Nascimento" />
+				<h:inputText readonly="true" value="#{personCtrl.person.birthDate}" />
+				<h:outputLabel value="Rua" />
+				<h:inputText readonly="true" value="#{personCtrl.person.street}" />
+				<h:outputLabel value="Bairro" />
+				<h:inputText readonly="true" value="#{personCtrl.person.district}" />
+				<h:outputLabel value="Cidade" />
+				<h:inputText readonly="true" value="#{personCtrl.person.city}" />
+				<h:outputLabel value="UF" />
+				<h:inputText readonly="true" value="#{personCtrl.person.uf}" />
+				<h:outputLabel value="CEP" />
+				<h:inputText readonly="true" value="#{personCtrl.person.postalCode}" />
+				<h:outputLabel value="Email" />
+				<h:inputText readonly="true" value="#{personCtrl.person.email}" />
+				<h:outputLabel value="Senha" />
+				<h:inputText readonly="true" value="#{personCtrl.person.password}" />
+				<h:outputLabel value="Tipo" />
+				<h:inputText readonly="true" value="#{personCtrl.person.type}" />
+			</h:panelGrid>
+			<h:commandButton value="Lista" action="list_person" />
+			<h:commandButton value="Gravar" action="personCtrl.actionRecord" />
+		</div>
+	</h:form>
+</h:body>
+</html>

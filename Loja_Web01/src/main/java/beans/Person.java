@@ -12,9 +12,9 @@ public class Person {
 	@GeneratedValue
 	@Column(name = "per_id")
 	private int id;
-	@Column(name = "per_name", length = 60, nullable = true)
+	@Column(name = "per_name", length = 60, nullable = false)
 	private String name;
-	@Column(name = "per_cpf")
+	@Column(name = "per_cpf", length = 11, nullable = false)
 	private String cpf;
 	@Column(name = "per_rg")
 	private String rg;
