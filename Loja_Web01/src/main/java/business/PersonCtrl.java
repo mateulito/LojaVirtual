@@ -7,6 +7,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
 import beans.Person;
+import beans.Phone;
 import persistence.PersonDAO;
 
 @ManagedBean
@@ -49,6 +50,11 @@ public class PersonCtrl implements Serializable{
 	
 	public String actionAlter(Person p) {
 		person = p;
+		return "form_person";
+	}
+	public String actionInsertPhone() {
+		Phone phone = new Phone();
+		phone.setPerson(person);
 		return "form_person";
 	}
 	

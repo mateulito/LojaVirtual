@@ -1,6 +1,8 @@
 package beans;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.*;
 
@@ -118,4 +120,14 @@ public class Person {
 		this.type = type;
 	}
 	
+	@OneToMany(mappedBy = "person", cascade = CascadeType.ALL)
+	private List<Phone> phones = new ArrayList<Phone>();
+	
+	public List<Phone> getPhones(){
+		return phones;
+	}
+	
+	public void setPhones(List<Phone> phones) {
+		this.phones = phones;
+	}
 }
