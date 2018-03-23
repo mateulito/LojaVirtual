@@ -15,6 +15,9 @@ public class ProductCtrl implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private Product product;
 	
+	public void Product() {
+		this.product = new Product();
+	}
 	
 	public Product getProduct() {
 		return product;

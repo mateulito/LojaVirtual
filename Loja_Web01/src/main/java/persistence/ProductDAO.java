@@ -42,7 +42,7 @@ public class ProductDAO implements Serializable {
 			consult = session.createQuery("from Product " + "where pro_name like :parameter order by pro_name");
 			consult.setString("parameter", "%" + filter + "%");
 		}
-		List list = consult.list();
+		List<Product> list = consult.list();
 		session.close();
 		return list;
 	}

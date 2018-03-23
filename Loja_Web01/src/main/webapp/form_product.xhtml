@@ -18,9 +18,9 @@
 					<h:outputLabel value="Cadastro de Produtos" />
 				</f:facet>
 				<h:outputLabel value="Nome:" />
-				<h:inputText readonly="true" value="#{ProductCtrl.product.name}" />
+				<h:inputText readonly="false" value="#{productCtrl.product.name}" />
 				<h:outputLabel value="Preço:" />
-				<h:inputText readonly="true" value="#{ProductCtrl.product.price}" />
+				<h:inputText readonly="false" value="#{productCtrl.product.price}" />
 			</h:panelGrid>
 			<h:commandButton value="Lista" action="list_product" />
 			<h:commandButton value="Gravar" action="productCtrl.actionRecord" />

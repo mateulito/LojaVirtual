@@ -44,7 +44,7 @@ public class PersonDAO implements Serializable {
 			consult = session.createQuery("from Person " + "where per_name :parameter order by per_name");
 			consult.setString("parameter", "%" + filter + "%");
 		}
-		List list = consult.list();
+		List<Person> list = consult.list();
 		session.close();
 		return list;
 	}

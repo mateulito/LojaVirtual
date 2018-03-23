@@ -11,7 +11,7 @@
 		<property name="hibernate.connection.username">postgre</property>
 		<property name="hibernate.connection.password">123456</property>
 		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/hibernatedb</property>
-		
+
 		<!-- Conf C3PO conn pool -->
 		<property name="c3po.min_size">5</property>
 		<property name="c3po.max_size">20</property>
@@ -23,10 +23,10 @@
 		<property name="format_sql">true</property>
 		<property name="generate_statistics">true</property>
 		<property name="use_sql_comments">true</property>
-		
+
 		<!-- Class mapping -->
-		<mapping class="beans.Product"/>
-		
+		<mapping class="beans.Product" />
+
 	</session-factory>
 
 
