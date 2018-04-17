@@ -44,5 +44,10 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>4.3.4.Final</version>
 		</dependency>
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>5.3</version>
+		</dependency>
 	</dependencies>
 </project>

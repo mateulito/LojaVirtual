@@ -1,0 +1,38 @@
+create database lojavirtualbd;
+
+/c lojavirtualbd
+
+create table person(
+	per_id serial primary key,
+	per_name varchar(60),
+	per_cpf char(11),
+	per_rg varchar(20),
+	per_birth_date date,
+	per_street varchar(60),
+	per_district vatrchar(20),
+	per_city varchar(40),
+	per_uf char(2),
+	per_postal char(8),
+	per_email varchar(60),
+	per_pwd varchar(25),
+	per_type varchar(20)
+);
+
+create table product(
+	pro_id serial primary key,
+	pro_name varchar(60),
+	pro_price numeric(17,2)
+);
+
+create table phone(
+	
+);
+
+create table payment_mthd(
+	pmthd_id serial primary key,
+	pmthd_description varchar(20),
+	pmthd_max_parcel_num integer,
+	pmthd_std_parcel_num integer,
+	pmthd_inteval integer,
+	pmthd_percentual_increase float
+);
